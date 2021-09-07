@@ -44,9 +44,7 @@
     color: #fff;
     text-decoration: none;
 }
-.main{
-    
-}
+
 .content{
     width: 100%;
     max-width: 1220px;
@@ -54,7 +52,6 @@
     margin: 0 auto;
 }
 .a_side{
-
     width: 100%;
     max-width: 620px;
     height: 90vh;
@@ -67,7 +64,8 @@
 }
 .a_side__box{
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 .a_side__box_cards{
     display: flex;
@@ -78,6 +76,8 @@
     margin-right: 20px;
     margin-left: 10px;
     color:  #FF4656;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 .card{
     width: 100%;
@@ -129,3 +129,30 @@ letter-spacing: 0.1em;
     right: 0;
 
 }
+/***Tratamento Responsivo***/
+@media(min-width:1440px){
+    .img_titulo{
+        margin-top: 250px;
+        margin-bottom: 53px;
+    }
+    .a_side__box{
+        display: flex;
+        margin-bottom: 200px;
+    }
+}
+@media(max-width:760px){
+    
+    .b_side{
+        display: none;
+    }
+    .a_side{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
